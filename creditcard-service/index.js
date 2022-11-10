@@ -6,7 +6,6 @@ import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { readCreditCardsQuery, insertCreditCardsQuery, deleteCreditCardsQuery } from './creditcards/database.js'; 
 import { cacheCreditCards, clearCreditCardsCache, getCreditCardsFromCache } from './creditcards/redis.js';
-import { readdirSync } from 'fs';
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename);
